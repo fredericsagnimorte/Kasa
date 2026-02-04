@@ -20,6 +20,19 @@
   text-decoration: underline;
 }
 
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 0px 20px 0px;
+}
+.footer p {
+  color: white;
+}
+
 /*import de la police décriture montserrat*/
 /* =========================
    Reset de base
