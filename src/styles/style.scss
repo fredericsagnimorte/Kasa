@@ -1,0 +1,20 @@
+// import des fichiers SCSS
+@import "./App";
+
+//mise a 0 du style de la page
+
+/* =========================
+   Reset de base
+   ========================= */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
