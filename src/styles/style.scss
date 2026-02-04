@@ -1,20 +1,27 @@
-// import des fichiers SCSS
-@import "./App";
+/*import des fichiers SCSS*/
+@import "header";
 
-//mise a 0 du style de la page
+/*import de la police décriture montserrat*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* =========================
    Reset de base
    ========================= */
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    font-family: Montserrat;
+    margin: 0px auto;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
