@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
+import Logement from "./pages/Logement/Logement";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
@@ -15,7 +16,7 @@ createRoot(document.getElementById("root")).render(
                     <Route path="/about" element={"<About/>"}></Route>
                     <Route
                         path="/logement/:id_logement"
-                        element="<Logement/ id_logement={id_logement}>"
+                        element={<Logement />}
                     ></Route>
                     <Route path="*" element="</Error>"></Route>
                 </Routes>
