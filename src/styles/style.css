@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*import des fichiers SCSS*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 .header {
   display: flex;
   justify-content: space-between;
@@ -14,7 +15,10 @@
   gap: 57px;
 }
 .header__nav a {
+  color: black;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
 }
 .header__nav a.active {
   text-decoration: underline;
@@ -156,6 +160,13 @@
   margin: 25px 50%;
   z-index: 3;
   color: white;
+}
+
+.star {
+  color: #e3e3e3;
+}
+.star--active {
+  color: #ff6060;
 }
 
 .footer {

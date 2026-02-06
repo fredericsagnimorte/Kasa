@@ -1,6 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Navigate,
+} from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
@@ -18,7 +23,11 @@ createRoot(document.getElementById("root")).render(
                         path="/logement/:id_logement"
                         element={<Logement />}
                     ></Route>
-                    <Route path="*" element="</Error>"></Route>
+                    <Route path="/error_404" element="</Error>"></Route>
+                    <Route
+                        path="*"
+                        element={<Navigate to="/error_404" replace />}
+                    />
                 </Routes>
             </main>
             <Footer />

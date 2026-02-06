@@ -1,3 +1,5 @@
+// slider
+
 .sliderContainer {
     margin: 0 auto 50px auto;
     height: 415px;
@@ -62,4 +64,14 @@
     margin: 25px 50%;
     z-index: 3;
     color: white;
+}
+
+// contenu
+
+.star {
+    color: #e3e3e3;
+
+    &--active {
+        color: #ff6060;
+    }
 }
