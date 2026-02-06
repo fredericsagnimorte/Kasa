@@ -67,11 +67,140 @@
 }
 
 // contenu
+.dataContent {
+    display: flex;
+    max-width: 1240px;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 30px;
+    .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-.star {
-    color: #e3e3e3;
+        .dataHeader {
+            display: flex;
+            flex-direction: column;
 
-    &--active {
-        color: #ff6060;
+            .dataTitle {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 36px;
+                vertical-align: bottom;
+                color: $primary-color;
+                text-overflow: ellipsis;
+                margin-bottom: 15px;
+            }
+
+            .dataLocation {
+                font-weight: 500;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .dataTags {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+
+                &__tag {
+                    background-color: $primary-color;
+                    min-width: 115px;
+                    padding: 5px 20px;
+                    font-weight: 700;
+                    font-style: Bold;
+                    font-size: 14px;
+                    text-align: center;
+                    border-radius: 10px;
+                    color: white;
+                }
+            }
+        }
+
+        .dataBody {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .dataHost {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    height: 64px;
+                    width: 64px;
+                    border-radius: 32px;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    height: 100%;
+                    font-weight: 500;
+                    font-size: 18px;
+                    vertical-align: bottom;
+                    color: $primary-color;
+                }
+            }
+
+            .hostRate {
+                display: flex;
+                justify-content: space-between;
+                gap: 12px;
+                font-size: 24px;
+                max-width: 196px;
+
+                .star {
+                    color: #e3e3e3;
+
+                    &--active {
+                        color: #ff6060;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        gap: 60px;
+        align-items: flex-start;
+        margin-bottom: 50px;
+
+        .details {
+            width: 50%;
+            background-color: $secondary-color;
+            border-radius: 10px;
+            overflow: hidden; // propre pour les coins
+
+            &:open {
+                img {
+                    rotate: 180deg;
+                }
+            }
+
+            &__summary {
+                background-color: $primary-color;
+                color: white;
+                font-weight: 700;
+                font-size: 18px;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &__content {
+                padding: 20px;
+            }
+        }
     }
 }
