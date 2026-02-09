@@ -10,6 +10,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Logement from "./pages/Logement/Logement";
+import Error from "./pages/Error/Error";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
@@ -23,7 +24,7 @@ createRoot(document.getElementById("root")).render(
                         path="/logement/:id_logement"
                         element={<Logement />}
                     ></Route>
-                    <Route path="/error_404" element="</Error>"></Route>
+                    <Route path="/error_404" element={<Error />}></Route>
                     <Route
                         path="*"
                         element={<Navigate to="/error_404" replace />}

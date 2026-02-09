@@ -1,0 +1,31 @@
+.errorMessage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto 150px auto;
+    gap: 150px;
+
+    &__404 {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 288px;
+        color: $primary-color;
+    }
+
+    &__pageDoNotExist {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 36px;
+        color: $primary-color;
+    }
+
+    &__backHome {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        color: black;
+    }
+}

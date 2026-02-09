@@ -1,3 +1,5 @@
+import Details from "../Details/Details";
+
 function LogementData({ dataLogement }) {
     return (
         <div className="dataContent">
@@ -25,7 +27,6 @@ function LogementData({ dataLogement }) {
                     </div>
                     <div className="hostRate">
                         {[...Array(5)].map((_, index) => {
-                            console.log(index);
                             return (
                                 <i
                                     key={index}
@@ -41,27 +42,16 @@ function LogementData({ dataLogement }) {
                 </div>
             </div>
             <div className="bottom">
-                <details className="details">
-                    <summary className="details__summary">
-                        <p>Description</p>
-                        <img src="../src/assets/images/arrow_up.svg" alt="" />
-                    </summary>
-                    <div className="details__content">
-                        {dataLogement.description}
-                    </div>
-                </details>
-
-                <details className="details">
-                    <summary className="details__summary">
-                        <p>Équipements</p>
-                        <img src="../src/assets/images/arrow_up.svg" alt="" />
-                    </summary>
-                    <div className="details__content">
-                        {dataLogement.equipments.map((el, index) => (
-                            <p key={index}>{el}</p>
-                        ))}
-                    </div>
-                </details>
+                <Details
+                    summary={"Description"}
+                    content={dataLogement.description}
+                />
+                <Details
+                    summary={"Équipements"}
+                    content={dataLogement.equipments.map((el, index) => (
+                        <p key={index}>{el}</p>
+                    ))}
+                />
             </div>
         </div>
     );
