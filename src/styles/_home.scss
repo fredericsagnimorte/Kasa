@@ -1,4 +1,7 @@
 #home {
+    display: flex;
+    flex-direction: column;
+
     .banner {
         overflow: hidden;
         width: 1240px;

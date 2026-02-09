@@ -24,6 +24,10 @@
   text-decoration: underline;
 }
 
+#home {
+  display: flex;
+  flex-direction: column;
+}
 #home .banner {
   overflow: hidden;
   width: 1240px;
@@ -286,7 +290,7 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  margin: 20px auto 50px auto;
+  margin: 0px auto 50px auto;
 }
 .about .banner {
   overflow: hidden;

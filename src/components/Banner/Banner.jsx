@@ -6,7 +6,7 @@ function Banner({ bannerImg, bannerText = "" }) {
                 src={bannerImg}
                 alt="Baniere paysage"
             />
-            <p className="banner__text">{bannerText}</p>
+            {bannerText != "" && <p className="banner__text">{bannerText}</p>}
         </div>
     );
 }
