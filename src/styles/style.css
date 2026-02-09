@@ -281,6 +281,77 @@
   padding: 20px;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 20px auto 50px auto;
+}
+.about .banner {
+  overflow: hidden;
+  width: 1240px;
+  height: 223px;
+  margin: 20px auto;
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .banner__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.about .banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.about .banner__text {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: bold;
+  text-align: center;
+}
+.about .details {
+  width: 70%;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about .details:open img {
+  rotate: 180deg;
+}
+.about .details__summary {
+  background-color: #ff6060;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  font-style: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .details__content {
+  padding: 20px;
+}
+
 .errorMessage {
   display: flex;
   justify-content: space-between;

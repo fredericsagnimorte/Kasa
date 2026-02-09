@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Logement from "./pages/Logement/Logement";
 import Error from "./pages/Error/Error";
+import About from "./components/About/About";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
@@ -19,7 +20,7 @@ createRoot(document.getElementById("root")).render(
             <main>
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
-                    <Route path="/about" element={"<About/>"}></Route>
+                    <Route path="/about" element={<About />}></Route>
                     <Route
                         path="/logement/:id_logement"
                         element={<Logement />}
