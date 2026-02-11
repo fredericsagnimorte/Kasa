@@ -23,6 +23,9 @@ body {
     max-width: 1440px;
     font-family: Montserrat;
     margin: 0px auto;
+    @media (max-width: 1239px) {
+        max-width: 375px;
+    }
 }
 
 *,
