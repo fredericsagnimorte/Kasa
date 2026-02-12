@@ -262,7 +262,7 @@
         .details {
             width: 50%;
             background-color: $secondary-color;
-            border-radius: 10px;
+            border-radius: 5px;
             overflow: hidden; // propre pour les coins
 
             @media (max-width: 1239px) {
@@ -281,7 +281,7 @@
                 font-weight: 700;
                 font-size: 18px;
                 padding: 10px 20px;
-                border-radius: 10px;
+                border-radius: 5px;
                 cursor: pointer;
                 list-style: none;
                 display: flex;
@@ -291,7 +291,6 @@
                 @media (max-width: 1239px) {
                     font-size: 13px;
                     padding: 7px 20px;
-                    border-radius: 5px;
 
                     img {
                         height: 20px;
@@ -302,10 +301,10 @@
 
             &__content {
                 padding: 20px;
+                border-radius: 5px;
 
                 @media (max-width: 1239px) {
                     font-size: small;
-                    border-radius: 5px;
                     padding: 10px;
                 }
             }
