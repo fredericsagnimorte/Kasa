@@ -554,17 +554,42 @@
   margin: 100px auto 150px auto;
   gap: 150px;
 }
+@media (max-width: 1239px) {
+  .errorMessage {
+    font-size: 96px;
+    gap: 100px;
+  }
+}
 .errorMessage__404 {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 288px;
   color: #ff6060;
 }
+@media (max-width: 1239px) {
+  .errorMessage__404 {
+    font-size: 96px;
+  }
+}
 .errorMessage__pageDoNotExist {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 36px;
   color: #ff6060;
+}
+@media (max-width: 1239px) {
+  .errorMessage__pageDoNotExist {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.errorMessage__pageDoNotExist .mobile-break {
+  display: inline;
+}
+@media (max-width: 1239px) {
+  .errorMessage__pageDoNotExist .mobile-break {
+    display: block;
+  }
 }
 .errorMessage__backHome {
   font-family: Montserrat;

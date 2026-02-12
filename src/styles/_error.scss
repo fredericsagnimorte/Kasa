@@ -6,11 +6,20 @@
     margin: 100px auto 150px auto;
     gap: 150px;
 
+    @media (max-width: 1239px) {
+        font-size: 96px;
+        gap: 100px;
+    }
+
     &__404 {
         font-family: Montserrat;
         font-weight: 700;
         font-size: 288px;
         color: $primary-color;
+
+        @media (max-width: 1239px) {
+            font-size: 96px;
+        }
     }
 
     &__pageDoNotExist {
@@ -18,6 +27,18 @@
         font-weight: 500;
         font-size: 36px;
         color: $primary-color;
+
+        @media (max-width: 1239px) {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .mobile-break {
+            display: inline;
+            @media (max-width: 1239px) {
+                display: block;
+            }
+        }
     }
 
     &__backHome {
