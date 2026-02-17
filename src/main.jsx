@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Logement from "./pages/Logement/Logement";
 import Error from "./pages/Error/Error";
-import About from "./components/About/About";
+import About from "./pages/About/About";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>

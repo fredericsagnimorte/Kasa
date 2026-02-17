@@ -1,5 +1,5 @@
-import Banner from "../Banner/Banner";
-import Details from "../Details/Details";
+import Banner from "../../components/Banner/Banner";
+import Details from "../../components/Details/Details";
 
 function About() {
     return (
