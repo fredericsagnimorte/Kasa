@@ -15,11 +15,11 @@ import About from "./pages/About/About";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <Router basename="/">
+        <Router basename="/Kasa">
             <Header />
             <main>
                 <Routes>
-                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/Kasa" element={<Home />}></Route>
                     <Route path="/about" element={<About />}></Route>
                     <Route
                         path="/logement/:id_logement"
