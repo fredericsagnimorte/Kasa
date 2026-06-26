@@ -15,7 +15,7 @@ import About from "./pages/About/About";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <Router basename="/Kasa">
+        <Router >
             <Header />
             <main>
                 <Routes>

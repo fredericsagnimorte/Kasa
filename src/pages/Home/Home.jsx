@@ -2,7 +2,7 @@ import Banner from "../../components/Banner/Banner";
 import data from "../../assets/data/logements.json";
 import Card from "../../components/Card/Card";
 
-const bannerImg = "../assets/images/banner.png";
+const bannerImg = "./src/assets/images/banner.png";
 
 function Home() {
     return (
