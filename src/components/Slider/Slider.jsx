@@ -1,4 +1,7 @@
 import { useState } from "react";
+import arrowRight from "../../assets/images/right_arrow.png";
+import arrowLeft from "../../assets/images/left_arrow.png";
+
 
 function Slider({ dataLogement }) {
     const [compteur, updateCompteur] = useState(0);
@@ -28,11 +31,11 @@ function Slider({ dataLogement }) {
                                 compteur > 0
                                     ? updateCompteur(compteur - 1)
                                     : updateCompteur(
-                                          dataLogement.pictures.length - 1,
-                                      );
+                                        dataLogement.pictures.length - 1,
+                                    );
                             }}
                         >
-                            <img src="../src/assets/images/left_arrow.png" />
+                            <img src={arrowLeft} />
                         </button>
                         <button
                             className="arrow right"
@@ -43,7 +46,7 @@ function Slider({ dataLogement }) {
                                     : updateCompteur(0);
                             }}
                         >
-                            <img src="../src/assets/images/right_arrow.png" />{" "}
+                            <img src={arrowRight} />{" "}
                         </button>
                         <p className="nbrImages">{`${compteur + 1}/${dataLogement.pictures.length}`}</p>
                     </>

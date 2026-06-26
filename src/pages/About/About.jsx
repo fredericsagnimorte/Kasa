@@ -1,10 +1,11 @@
 import Banner from "../../components/Banner/Banner";
 import Details from "../../components/Details/Details";
+import bannerImg from "../../assets/images/banner2.png";
 
 function About() {
     return (
         <div className="about">
-            <Banner bannerImg={"../src/assets/images/banner2.png"} />
+            <Banner bannerImg={bannerImg} />
             <Details
                 summary={"Fiabilité"}
                 content={
